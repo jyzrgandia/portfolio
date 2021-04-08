@@ -47,7 +47,7 @@
 
 .page-title{
     -webkit-text-stroke: 1px white;
-    -webkit-text-fill-color: black;
+    -webkit-text-fill-color: transparent;
 }
 
 .page-title::before{
