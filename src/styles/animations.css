@@ -1,0 +1,31 @@
+
+@keyframes slideRight{
+    from
+    {   opacity:0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade{
+    from
+    {
+        opacity:0;
+    }
+    to{
+        opacity:1
+    }
+}
+
+@keyframes ctaAnimation{
+    from
+    {
+        transform: translateY(-1px);
+    }
+    to{
+        transform: translateY(1px);
+    }
+}

@@ -1,5 +1,5 @@
-import React from 'react';
 import AppLayout from './components/AppLayout';
+import './styles/animations.css';
 
 function App() {
   return (

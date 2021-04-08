@@ -1,0 +1,34 @@
+.laptop-bg::before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width:100vw;
+    top: 0;
+    left:0;
+    background-image: url('https://mhs.sgp1.cdn.digitaloceanspaces.com/GJ/gj-bg.png');
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.home::before{
+    transition: all .7s ease-in-out;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1;
+}
+
+.about::before{
+    transition: all .7s ease-in-out;
+    transform: scaleX(-1);
+    background-size: 170%;
+    background-position: 160% 70%;
+    opacity: 1;
+}
+
+.projects::before{
+    transition: all .7s ease-in-out;
+    transform: scaleX(-1);
+    background-size: 170%;
+    background-position: -30% 45%;
+    opacity: 1;
+}

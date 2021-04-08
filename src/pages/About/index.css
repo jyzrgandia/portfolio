@@ -1,0 +1,7 @@
+.container {
+    animation: fade .7s ease-in-out;
+}
+
+.description{
+    animation: fade .3s ease-in-out
+}

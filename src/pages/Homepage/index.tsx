@@ -1,20 +1,28 @@
 import { Button } from 'antd';
 import React from 'react';
-import logo from '../assets/logo.png';
-interface HomepageProps {
+import { pageLogo } from '../../components/AssetImports';
+import './index.css';
 
+interface IndexProps {
+    setActivePage: React.Dispatch<React.SetStateAction<string>>
 }
 
-const Homepage: React.FC<HomepageProps> = () => {
+const Index: React.FC<IndexProps> = ({ setActivePage }) => {
     return (
         <div className="container">
             <div className="grid grid-cols-12 my-14 gap-x-14">
                 <div className="flex flex-col gap-y-20 col-span-5">
                     <div className="flex">
-                        <img className="h-full" src={logo} alt={logo} />
+                        <img className="h-full" src={pageLogo} alt="logo" />
                     </div>
                     <div className="flex justify-center cta-btn">
-                        <Button type="primary" className="bg-transparent border-2 border-white px-10 hover:bg-white hover:text-themeOrange">CONTACT US</Button>
+                        <Button
+                            type="primary"
+                            className="bg-transparent border-2 border-white px-10 hover:bg-themeOrange focus:bg-transparent focus:border-white"
+                            onClick={() => setActivePage('contact')}
+                        >
+                            CONTACT US
+                        </Button>
                     </div>
                 </div>
 
@@ -40,4 +48,4 @@ const Homepage: React.FC<HomepageProps> = () => {
     );
 }
 
-export default Homepage
+export default Index

@@ -1,0 +1,21 @@
+.branding:hover img{
+    transition: all .9s ease-in-out;
+    transform: rotateY(360deg)
+}
+
+.message , .bottom-border{
+    transition: all .3s ease-in-out;
+}
+
+.bottom-border{
+    height: 4px;
+    width: 16px;
+    background: #FB9D74;
+    margin: 5px auto;
+    border-radius: 12px;
+}
+
+.message:hover .bottom-border{
+    width: 100%;
+    background: #FFF;
+}

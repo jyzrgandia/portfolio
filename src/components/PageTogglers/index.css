@@ -1,0 +1,30 @@
+.link-active,.link-inactive{
+    transition: all .3s ease-in;
+}
+
+.link-active::before{
+    content: " ";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #FB9D74;
+    border-radius: 50%;
+    transition: all .3s ease-in;
+}
+
+.link-inactive::before{
+    content: " ";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: none;
+    transition: all .2s ease-in;
+}
+
+.link-inactive:hover::before{
+    height: 30px;
+    width: 30px;
+    border: 1px solid #FB9D74;
+    border-radius: 50%;
+}
+

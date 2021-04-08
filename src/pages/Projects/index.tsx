@@ -1,16 +1,12 @@
 import React from 'react';
-import logo from '../assets/logo.png';
-
-interface ProjectsProps {
-
-}
-
-const Projects: React.FC<ProjectsProps> = () => {
+import { pageLogo } from '../../components/AssetImports';
+import './index.css';
+const index: React.FC = () => {
     return (
         <div className="container px-20">
             <div className="flex flex-col">
                 <h2 className="text-themeOrange font-proxiSemiBold text-3xl flex gap-x-2 items-center">
-                    <img className="h-6" src={logo} alt="logo" />
+                    <img className="h-6" src={pageLogo} alt="logo" />
                     PROJECTS
                 </h2>
             </div>
@@ -19,4 +15,4 @@ const Projects: React.FC<ProjectsProps> = () => {
     );
 }
 
-export default Projects
+export default index

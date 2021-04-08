@@ -1,10 +1,6 @@
 import React from 'react';
 
-interface PageTitleProps {
-    pageState: string;
-}
-
-const PageTitle: React.FC<PageTitleProps> = ({ pageState }) => {
+const PageTitle: React.FC = ({ children }) => {
     return (
         <div
             style={{
@@ -17,9 +13,8 @@ const PageTitle: React.FC<PageTitleProps> = ({ pageState }) => {
             <h1 style={{
                 height: '150px',
                 width: '80vh'
-            }} className="page-title text-6xl font-proxiExtraBold flex items-center transform fixed rotate-90 top-0 origin-bottom-left ">
-                {pageState === 'about' && 'ABOUT US'}
-                {pageState === 'projects' && 'PROJECTS'}
+            }} className="page-title text-6xl font-proxiExtraBold flex items-center transform fixed rotate-90 top-0 origin-bottom-left uppercase">
+                {children}
             </h1>
         </div>
     );

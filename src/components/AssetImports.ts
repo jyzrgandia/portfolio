@@ -1,0 +1,1 @@
+export const pageLogo = "https://mhs.sgp1.cdn.digitaloceanspaces.com/GJ/gj-logo.png";

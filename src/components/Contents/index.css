@@ -1,0 +1,45 @@
+.page-title{
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-title::before{
+    content: " ";
+    height: 2px;
+    width: 200px;
+    background: #FB9D74;
+    position: absolute;
+    top: 120px;
+    animation: pageTitleBefore .5s ease-in-out;
+}
+
+.page-title::after{
+    content: " ";
+    height: 2px;
+    width: 250px;
+    background: #FB9D74;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    animation: pageTitleAfter .5s ease-in-out;
+}
+
+@keyframes pageTitleAfter{
+    from
+    {   
+        width:0;
+    }
+    to{
+        width: 250px;
+    }
+}
+
+@keyframes pageTitleBefore{
+    from
+    {   
+        width:0;
+    }
+    to{
+        width: 200px;
+    }
+}

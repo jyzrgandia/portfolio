@@ -1,0 +1,11 @@
+.container{
+    animation: fade .7s ease-in-out;
+}
+
+.welcome-text{
+    animation:fade .3s ease-in-out;
+}
+
+.cta-btn{
+    animation: ctaAnimation .3s ease-in-out alternate-reverse infinite;
+}
