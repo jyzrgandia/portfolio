@@ -1,0 +1,128 @@
+.laptop-bg::before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width:100vw;
+    top: 0;
+    left:0;
+    background-image: url('../assets/backgroundPSD.png');
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.home::before{
+    transition: all .7s ease-in-out;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1;
+}
+
+.about::before{
+    transition: all .7s ease-in-out;
+    transform: scaleX(-1);
+    background-size: 170%;
+    background-position: 160% 70%;
+    opacity: 1;
+}
+
+.projects::before{
+    transition: all .7s ease-in-out;
+    transform: scaleX(-1);
+    background-size: 170%;
+    background-position: -30% 45%;
+    opacity: 1;
+}
+
+.container{
+    animation: fade .7s ease-in-out;
+}
+
+.welcome-text{
+    animation:fade .3s ease-in-out;
+}
+
+.cta-btn{
+    animation: ctaAnimation .3s ease-in-out alternate-reverse infinite;
+}
+
+.page-title{
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: black;
+}
+
+.page-title::before{
+    content: " ";
+    height: 3px;
+    width: 200px;
+    background: #FB9D74;
+    position: absolute;
+    top: 120px;
+    animation: pageTitleBefore .5s ease-in-out;
+}
+
+.page-title::after{
+    content: " ";
+    height: 3px;
+    width: 250px;
+    background: #FB9D74;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    animation: pageTitleAfter .5s ease-in-out;
+}
+
+.description{
+    animation: fade .3s ease-in-out
+}
+
+@keyframes pageTitleAfter{
+    from
+    {   
+        width:0;
+    }
+    to{
+        width: 250px;
+    }
+}
+
+@keyframes pageTitleBefore{
+    from
+    {   
+        width:0;
+    }
+    to{
+        width: 200px;
+    }
+}
+
+@keyframes slideRight{
+    from
+    {   opacity:0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade{
+    from
+    {
+        opacity:0;
+    }
+    to{
+        opacity:1
+    }
+}
+
+@keyframes ctaAnimation{
+    from
+    {
+        transform: translateY(-1px);
+    }
+    to{
+        transform: translateY(1px);
+    }
+}
+
